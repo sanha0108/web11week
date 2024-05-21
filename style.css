@@ -1,0 +1,275 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+
+        @font-face {
+            font-family: RIDIBATANG;
+            src: url(RIDIBatang.otf);
+        }
+
+        @keyframes position{
+            0%{
+                transform: translateY(1vw);
+                opacity: 0;
+            }
+            100%{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeout{
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+
+        
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        header{
+            width: 99vw;
+            height: 7.45vw;
+            padding: 2.29vw 6.25vw 2.29vw 6.25vw;
+
+            position: fixed;
+            display: flex;
+
+            transition: all 0.2s ease-in-out;
+            z-index: 999;
+        }
+
+        header.scrolled{
+            height: 7.45vw;
+            background-color: rgba(28, 15, 85, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo img{
+            width: 6.51vw;
+        }
+
+        header a:hover{
+            font-weight: 500;
+            transition: 0.1s ease-in-out;
+        }
+
+        .HDnav{
+            height: 1.51vw;
+            margin-left: auto;
+            line-height: 2.86vw;
+        }
+
+        .HDtext{
+            color: white;
+            font-size: 1.25vw;
+            font-weight: 200;
+            margin-right: 3.85vw;
+        }
+
+        .HDtext:nth-child(4){
+            margin-right: 0;
+        }
+
+        .sec1{
+            width: 99vw;
+            height: 48.80vw;
+            background-image: linear-gradient(to bottom, #1D2A54, #2440A2, #675CA2, #BE81A2, #3A276C);
+        }
+
+        .mountain{
+            width: 99vw;
+            position: fixed;
+            top: 30.94vw;
+
+            z-index: 996;
+
+            /* opacity: 0; */
+
+            /* visibility: hidden; */
+        }
+
+        .maintitle{
+            position: fixed;
+            top: 18.23vw;
+            left: 20vw;
+            
+
+            /* visibility: hidden; */
+        }
+
+        .MTtop{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.3vw;
+            width: 29.8vw;
+
+            z-index: 998;
+        }
+
+        .mt1, .mt2, .mt3{
+            font-family: RIDIBATANG;
+            color: white;
+        }
+
+        .mt1{
+            font-size: 2.5vw;
+        }
+
+        .mt2{
+            font-size: 1.88vw;
+            line-height: 2.8vw;
+        }
+
+        .mt3{
+            font-size: 3.33vw;
+
+            z-index: 997;
+        }
+
+        .sec2{
+            height: 17.4vw;
+            background-image: linear-gradient(to bottom, #3A276C, #0C024A);
+        }
+
+        .qickmenu{
+            width: 63.13vw;
+            height: 4.69vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 8.02vw;
+        }
+
+        .QMtext{
+            margin-top: auto;
+        }
+
+        .QMtop{
+            font-size: 1.67vw;
+            color: white;
+            font-weight: 600;
+        }
+
+        .QMbottom{
+            font-size: 0.72vw;
+            color: white;
+            font-weight: 200;
+            margin-top: 0.35vw;
+            margin-left: 0.05em;
+            letter-spacing: -0.01em;
+            line-height: 1.3em;
+        }
+
+        .QMicon{
+            display: flex;
+        }
+
+        .QMicon_con{
+            text-align: center;
+            margin-right: 7.19vw;
+        }
+
+        .QMicon_con:nth-child(5){
+            margin-right: 0;
+        }
+
+        .QMimg{
+            width: 3.54vw;
+        }
+
+        .QMtitle{
+            font-size: 0.73vw;
+            color: white;
+            font-weight: 300;
+        }
+
+        .QMtitle:hover{
+            font-weight: 500;
+            transition: 0.2s ease-in-out;
+        }
+
+        .title{
+            font-size: 1.88vw;
+            text-align: center;
+            padding-top: 8.33vw;
+            font-weight: 600;
+        }
+
+        .content_con{
+            margin: auto;
+            width: 63.13vw;
+            margin-top: 6.25vw;
+        }
+
+        .content{
+            margin-bottom: 7.81vw;
+            display: flex;
+        }
+
+        .content:nth-child(4){
+            margin-bottom: 10.94vw;
+
+        }
+
+        .CTimg{
+            width: 37.92vw;
+            height: 13.44vw;
+            object-fit: cover;
+            margin-right: 3.44vw;
+        }
+
+        .CTtextbox{
+            display: flex;
+            margin: auto 0;
+        }
+
+        .CTtitle{
+            font-size: 1.25vw;
+            font-weight: 600;
+        }
+
+        .CTtitle p{
+            margin-bottom: 1.46vw;
+        }
+
+        .CTbody{
+            font-size: 1.25vw;
+            font-weight: 300;
+            margin-left: 1.46vw;
+        }
+
+        .CTbody p{
+            margin-bottom: 1.46vw;
+        }
+
+        .CTbody p:last-child{
+            line-height: 1.6em;
+            margin-top: -0.2em;
+            margin-bottom: 0;
+        }
+
+        footer{
+            height: 4vw;
+            background-color: #272632;
+        }
